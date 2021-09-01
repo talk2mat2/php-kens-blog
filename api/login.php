@@ -62,3 +62,10 @@ if($loginbyJwt['status']==true){
     echo json_encode(array("status"=>true,"userData"=>$loginbyJwt["userData"],"token"=>"Bearer ".$jwt));
     exit();
 }
+if($loginbyJwt['status']==false){
+    http_response_code(401);
+    array_push($loginError,$loginbyJwt['message']);
+    echo json_encode(array("status"=>false,"message"=>$loginError));
+
+}
+

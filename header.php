@@ -19,7 +19,7 @@ include_once("./controllers/controller.php")?>
     <meta name="keywords" content="Prototype a digital product idea">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
+    <title>Kens'blog</title>
     <link rel="stylesheet" href="./nicepage.css" media="screen">
     <script class="u-script" type="text/javascript" src="./jquery-1.9.1.min.js.download" defer=""></script>
     <script class="u-script" type="text/javascript" src="./nicepage.js.download" defer=""></script>

@@ -77,6 +77,10 @@ else{
         array_push($loginError,"You dint supply your password");
     }
 
+    if(!empty($loginError)){
+return;
+    }
+
     $refinedInput = filter_input_array(INPUT_POST,FILTER_DEFAULT);
    
 $email= trim($refinedInput["email"]);

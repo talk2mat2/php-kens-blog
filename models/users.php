@@ -86,11 +86,11 @@ if($passwordVerify){
     return array("status"=>true,"userData"=>$user);
 }
 else{
-    return array("status"=>false);
+    return array("status"=>false,"message"=>"wrong password supplied");
 }
 }
 else{
-    return array("status"=>false);
+    return array("status"=>false,"message"=>"no user with the email $email");
 }
 
 }

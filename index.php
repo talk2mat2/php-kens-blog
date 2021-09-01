@@ -16,7 +16,7 @@ include "./header.php"
 <a href="postdetails.php?postId=<?=$items['id'] ?>" ><h4><?=$items["title"]?></h4></a>
        </li>
       <li>
-<span style='font-size:25px;'><?=$items["postBody"]?></span>
+<span style='font-size:25px;'><?= substr($items["postBody"],0,50) ?>..</span>
        </li>
       <li>
 <span posted by > <?=$items["firstName"]?></span>
